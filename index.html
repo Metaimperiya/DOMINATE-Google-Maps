@@ -2,34 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>RankForge — Dominate Google Maps & Local Search | Local SEO Agency</title>
-    <meta name="description" content="RankForge helps local businesses dominate Google Maps. Get more calls, leads, and customers with proven Local SEO strategies. Free audit available." />
-    <meta property="og:title" content="RankForge — Dominate Google Maps & Local Search" />
-    <meta property="og:description" content="Get into the Top 3 Map Pack and start getting more local customers today." />
-    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Schema.org разметка для SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "RankForge",
-      "description": "Local SEO Agency helping businesses dominate Google Maps.",
-      "url": "https://rankforge.co",
-      "telephone": "+1-800-555-0199",
-      "priceRange": "$$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Austin",
-        "addressRegion": "TX",
-        "addressCountry": "US"
-      }
-    }
-    </script>
-
+    <!-- ===== TITLE & SEO ===== -->
+    <title>DOMINATE Google Maps — Local SEO Agency | RankForge</title>
+    <meta name="description" content="Get your business into Google Maps Top 3. Professional Local SEO, review management, and ranking strategy. Free audit available." />
+    <meta name="keywords" content="Local SEO, Google Maps Ranking, Google Business Profile, SEO Agency, Review Management" />
+    
+    <!-- ===== ПОДТВЕРЖДЕНИЕ GOOGLE SEARCH CONSOLE ===== -->
+    <meta name="google-site-verification" content="RS-c4zCmiwrQUy9uKeLJOVDVCvz3yt8pJPEGKbIgMnY" />
+    
+    <!-- ===== OPEN GRAPH (Превьюшка) ===== -->
+    <meta property="og:title" content="DOMINATE Google Maps — Get More Local Customers" />
+    <meta property="og:description" content="Professional Local SEO agency. We rank your business in Google Maps Top 3. Free audit available." />
+    <meta property="og:image" content="https://rankforge.vercel.app/DOMINATE-Google-Maps.png" />
+    <meta property="og:url" content="https://rankforge.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RankForge" />
+    
+    <!-- ===== TWITTER ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DOMINATE Google Maps — Get More Local Customers" />
+    <meta name="twitter:description" content="Professional Local SEO agency. Rank your business in Google Maps Top 3." />
+    <meta name="twitter:image" content="https://rankforge.vercel.app/DOMINATE-Google-Maps.png" />
+    
+    <!-- ===== FAVICON РАКЕТА ===== -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/180/apple/325/rocket_1f680.png" />
+    
+    <!-- ===== AOS ANIMATIONS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    
     <style>
-        /* ===== БАЗА ===== */
+        /* ===== СБРОС ===== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body {
@@ -37,7 +42,6 @@
             background: #0b0d10;
             color: #e8edf5;
             line-height: 1.6;
-            cursor: default;
             overflow-x: hidden;
         }
         ::selection { background: #7c3aed; color: #fff; }
@@ -48,9 +52,8 @@
             background: #7c3aed;
             color: #fff;
             padding: 10px 0;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 15px;
-            letter-spacing: 1px;
             overflow: hidden;
             position: relative;
             z-index: 10;
@@ -66,19 +69,14 @@
             0% { transform: translate(0, 0); }
             100% { transform: translate(-100%, 0); }
         }
-        .ticker-wrap a {
-            color: #fff;
-            font-weight: 800;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-        }
+        .ticker-wrap a { color: #fff; font-weight: 900; text-decoration: underline; }
 
         /* ===== ХЕДЕР ===== */
         .header {
             padding: 20px 0;
             border-bottom: 1px solid #1e242b;
             backdrop-filter: blur(10px);
-            background: rgba(11,13,16,0.8);
+            background: rgba(11,13,16,0.85);
             position: sticky;
             top: 0;
             z-index: 100;
@@ -93,8 +91,7 @@
         .logo {
             font-size: 30px;
             font-weight: 900;
-            letter-spacing: -1px;
-            background: linear-gradient(135deg, #a78bfa, #7c3aed, #4f46e5);
+            background: linear-gradient(135deg, #a78bfa, #7c3aed);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -106,20 +103,8 @@
             font-size: 14px;
             font-weight: 600;
             transition: 0.3s;
-            position: relative;
         }
         .nav a:hover { color: #fff; }
-        .nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0%;
-            height: 2px;
-            background: #7c3aed;
-            transition: 0.3s;
-        }
-        .nav a:hover::after { width: 100%; }
         .btn-outline {
             border: 1px solid #7c3aed;
             color: #fff !important;
@@ -128,11 +113,7 @@
             background: transparent;
             transition: 0.3s;
         }
-        .btn-outline:hover {
-            background: #7c3aed;
-            color: #fff !important;
-            box-shadow: 0 0 30px rgba(124,58,237,0.3);
-        }
+        .btn-outline:hover { background: #7c3aed; box-shadow: 0 0 30px rgba(124,58,237,0.3); }
 
         /* ===== HERO ===== */
         .hero {
@@ -150,7 +131,6 @@
             height: 600px;
             background: radial-gradient(circle, rgba(124,58,237,0.15), transparent 70%);
             border-radius: 50%;
-            z-index: 0;
             filter: blur(60px);
             pointer-events: none;
         }
@@ -213,7 +193,6 @@
             0%, 100% { box-shadow: 0 4px 40px rgba(124,58,237,0.4); }
             50% { box-shadow: 0 4px 70px rgba(124,58,237,0.8); }
         }
-
         .hero-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -319,7 +298,7 @@
             position: relative;
         }
         .price-card.popular::before {
-            content: '⭐ MOST POPULAR';
+            content: '⭐ BEST VALUE';
             position: absolute;
             top: -12px;
             left: 50%;
@@ -351,6 +330,9 @@
             padding: 8px 0;
             border-bottom: 1px solid #1e242b;
             font-size: 15px;
+        }
+        .price-card ul li::before {
+            content: "✅ ";
         }
         .btn-price {
             background: transparent;
@@ -388,32 +370,6 @@
         .cta-big h2 { font-size: 44px; margin-bottom: 15px; }
         .cta-big p { color: #9ca3af; max-width: 550px; margin: 0 auto 30px; }
 
-        /* ===== КАСТОМНЫЙ КУРСОР ===== */
-        .cursor-follower {
-            width: 40px;
-            height: 40px;
-            border: 2px solid #7c3aed;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transition: 0.08s;
-            transform: translate(-50%, -50%);
-            opacity: 0.6;
-            mix-blend-mode: difference;
-        }
-        .cursor-dot {
-            width: 8px;
-            height: 8px;
-            background: #7c3aed;
-            border-radius: 50%;
-            position: fixed;
-            pointer-events: none;
-            z-index: 9999;
-            transition: 0.05s;
-            transform: translate(-50%, -50%);
-        }
-
         /* ===== СЧЕТЧИК ===== */
         .counter-wrap {
             display: flex;
@@ -424,9 +380,7 @@
             border-top: 1px solid #1e242b;
             margin-top: 60px;
         }
-        .counter-item {
-            text-align: center;
-        }
+        .counter-item { text-align: center; }
         .counter-item .num {
             font-size: 48px;
             font-weight: 900;
@@ -454,7 +408,6 @@
             .header-inner { flex-direction: column; align-items: center; }
             .nav a { margin: 0 10px; font-size: 13px; }
             .counter-wrap { gap: 25px; }
-            .cursor-follower, .cursor-dot { display: none; }
         }
     </style>
 </head>
@@ -463,17 +416,15 @@
     <!-- ===== БЕГУЩАЯ СТРОКА ===== -->
     <div class="ticker-wrap">
         <span>
-            🚀 LIMITED OFFER: FREE LOCAL SEO AUDIT FOR FIRST 10 BUSINESSES &nbsp;|&nbsp; 
+            🚀 FREE LOCAL SEO AUDIT FOR FIRST 10 BUSINESSES &nbsp;|&nbsp; 
             ⭐ 30-DAY RANKING GUARANTEE OR YOUR MONEY BACK &nbsp;|&nbsp; 
-            📞 CLAIM YOUR FREE AUDIT NOW → <a href="#cta">CLICK HERE</a> &nbsp;|&nbsp; 
-            🔥 OVER 847 BUSINESSES DOMINATING GOOGLE MAPS &nbsp;|&nbsp; 
-            🚀 LIMITED OFFER: FREE LOCAL SEO AUDIT FOR FIRST 10 BUSINESSES &nbsp;|&nbsp; 
-            ⭐ 30-DAY RANKING GUARANTEE OR YOUR MONEY BACK
+            📞 CLAIM YOUR FREE AUDIT → <a href="#cta">CLICK HERE</a> &nbsp;|&nbsp; 
+            🔥 OVER 847 BUSINESSES DOMINATING GOOGLE MAPS
         </span>
     </div>
 
     <!-- ===== ХЕДЕР ===== -->
-    <header class="header" id="top">
+    <header class="header">
         <div class="container header-inner">
             <div class="logo">⛏️ RankForge</div>
             <nav class="nav">
@@ -485,7 +436,7 @@
     </header>
 
     <!-- ===== HERO ===== -->
-    <section class="hero" id="hero">
+    <section class="hero">
         <div class="container">
             <div class="badge">🏆 #1 Local SEO Agency for Small Business</div>
             <h1>DOMINATE <span>Google Maps</span><br/> & Own Your Market</h1>
@@ -501,7 +452,7 @@
     </section>
 
     <!-- ===== PROBLEM ===== -->
-    <section class="section" id="problem">
+    <section class="section">
         <div class="container grid-2col">
             <div data-aos="fade-right">
                 <span style="color:#7c3aed; font-weight:700;">THE PROBLEM</span>
@@ -549,47 +500,56 @@
                 <p class="section-sub">Invest in visibility. Get a return in 30 days or we work for free.</p>
             </center>
             <div class="pricing-grid">
+                <!-- STARTER -->
                 <div class="price-card" data-aos="flip-up">
-                    <h3>Starter</h3>
-                    <div class="price">$300</div>
+                    <h3>🚀 Starter</h3>
+                    <div style="font-size:14px; color:#9ca3af; margin-bottom:5px;">Launch Your Visibility</div>
+                    <div class="price">$150 <small>– $300</small></div>
                     <ul>
-                        <li>✔ GBP Basic Optimization</li>
-                        <li>✔ Citation Audit</li>
-                        <li>✔ Keyword Research (10 terms)</li>
-                        <li>✔ 1 Report</li>
+                        <li>Google Business Profile Optimization</li>
+                        <li>Basic SEO Setup</li>
+                        <li>10 Local Keywords</li>
+                        <li>Citation Audit</li>
                     </ul>
-                    <button class="btn-price">Start Now</button>
+                    <button class="btn-price" onclick="window.open('https://t.me/StartNowFreeAudit','_blank')">Start Now</button>
                 </div>
+
+                <!-- BUSINESS (ПОПУЛЯРНЫЙ) -->
                 <div class="price-card popular" data-aos="flip-up" data-aos-delay="100">
-                    <h3>Growth</h3>
-                    <div class="price">$900</div>
+                    <h3>💼 Business Package</h3>
+                    <div style="font-size:14px; color:#9ca3af; margin-bottom:5px;">Outrank Your Competitors</div>
+                    <div class="price">$1,000 <small>– $2,500</small></div>
                     <ul>
-                        <li>✔ Full Local SEO Strategy</li>
-                        <li>✔ Map Pack Optimization</li>
-                        <li>✔ Review Management Setup</li>
-                        <li>✔ Monthly Monitoring</li>
-                        <li>✔ 30+ Local Keywords</li>
+                        <li>Full GBP Management</li>
+                        <li>Local SEO + Ranking Boost</li>
+                        <li>Reputation Management Setup</li>
+                        <li>30+ Local Keywords</li>
+                        <li>Monthly Monitoring</li>
                     </ul>
-                    <button class="btn-price popular-btn">Get Started</button>
+                    <button class="btn-price popular-btn" onclick="window.open('https://t.me/StartNowFreeAudit','_blank')">Get Started</button>
                 </div>
+
+                <!-- PREMIUM -->
                 <div class="price-card" data-aos="flip-up" data-aos-delay="200">
-                    <h3>Business Domination</h3>
-                    <div class="price">$2,500</div>
+                    <h3>👑 Premium / Agency</h3>
+                    <div style="font-size:14px; color:#9ca3af; margin-bottom:5px;">Dominate Your Market</div>
+                    <div class="price">$3,000 <small>– $7,000+</small></div>
                     <ul>
-                        <li>✔ Everything in Growth</li>
-                        <li>✔ Competitor Attack Plan</li>
-                        <li>✔ Content & Citation Building</li>
-                        <li>✔ Dedicated Account Manager</li>
-                        <li>✔ Guaranteed Top 3 Ranking</li>
+                        <li>Full Local SEO System</li>
+                        <li>Monthly Ranking & Optimization</li>
+                        <li>Reputation Management + Strategy</li>
+                        <li>Lead Generation Setup</li>
+                        <li>Dedicated Account Manager</li>
+                        <li>Guaranteed Top 3 Ranking</li>
                     </ul>
-                    <button class="btn-price">Book a Call</button>
+                    <button class="btn-price" onclick="window.open('https://t.me/StartNowFreeAudit','_blank')">Book a Call</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== СЧЕТЧИК ===== -->
-    <div class="counter-wrap" id="counter">
+    <div class="counter-wrap">
         <div class="counter-item">
             <div class="num" data-count="847">0</div>
             <div class="label">Businesses in Top 3</div>
@@ -620,50 +580,18 @@
 
     <!-- ===== FOOTER ===== -->
     <footer style="padding:30px 0; border-top:1px solid #1e242b; text-align:center; color:#6b7280; font-size:14px;">
-        © 2026 RankForge Agency. Built for domination. 
+        © 2026 RankForge Agency. Built for domination.
         <span style="display:block; margin-top:6px; font-size:12px; color:#4b5563;">
             📍 Austin, TX | ⚡ 30-Day Money-Back Guarantee
         </span>
     </footer>
 
-    <!-- ===== КАСТОМНЫЙ КУРСОР ===== -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-follower"></div>
-
-    <!-- ===== AOS (ANIMATION ON SCROLL) ===== -->
+    <!-- ===== AOS ===== -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
     <script>
-        // ===== ИНИЦИАЛИЗАЦИЯ AOS =====
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 50,
-            easing: 'ease-out-cubic'
-        });
+        AOS.init({ duration: 800, once: true, offset: 50 });
 
-        // ===== КАСТОМНЫЙ КУРСОР =====
-        const cursorDot = document.querySelector('.cursor-dot');
-        const cursorFollower = document.querySelector('.cursor-follower');
-
-        document.addEventListener('mousemove', (e) => {
-            cursorDot.style.left = e.clientX + 'px';
-            cursorDot.style.top = e.clientY + 'px';
-            cursorFollower.style.left = e.clientX + 'px';
-            cursorFollower.style.top = e.clientY + 'px';
-        });
-
-        document.addEventListener('mouseleave', () => {
-            cursorDot.style.opacity = '0';
-            cursorFollower.style.opacity = '0';
-        });
-        document.addEventListener('mouseenter', () => {
-            cursorDot.style.opacity = '1';
-            cursorFollower.style.opacity = '0.6';
-        });
-
-        // ===== АНИМИРОВАННЫЙ СЧЕТЧИК =====
+        // ===== СЧЕТЧИК =====
         const counters = document.querySelectorAll('.num');
         let animated = false;
 
@@ -677,12 +605,8 @@
                 const progress = Math.min(elapsed / duration, 1);
                 const current = Math.floor(progress * target);
                 el.textContent = current.toLocaleString();
-
-                if (progress < 1) {
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    el.textContent = target.toLocaleString();
-                }
+                if (progress < 1) requestAnimationFrame(updateCounter);
+                else el.textContent = target.toLocaleString();
             }
             requestAnimationFrame(updateCounter);
         }
@@ -698,21 +622,18 @@
 
         document.querySelectorAll('.counter-item').forEach(item => observer.observe(item));
 
-        // ===== ПЛАВНЫЙ СКРОЛЛ ПО ЯКОРЯМ =====
+        // ===== ПЛАВНЫЙ СКРОЛЛ =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // ===== КОНСОЛЬ ДЛЯ СЕО-БОТОВ =====
-        console.log('%c🔥 RankForge — Dominate Google Maps', 'font-size:24px; font-weight:bold; color:#7c3aed;');
+        console.log('%c🚀 RankForge — Dominate Google Maps', 'font-size:24px; font-weight:bold; color:#7c3aed;');
         console.log('%c📞 Free Audit: https://t.me/StartNowFreeAudit', 'font-size:16px; color:#9ca3af;');
     </script>
 
 </body>
-</html>SS
+</html>
